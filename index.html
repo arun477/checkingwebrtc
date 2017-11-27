@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+    <title>Are you there?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Righteous" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body style="text-align:center; font-family: 'Righteous', cursive;">
+    <h5 style="text-shadow:1px 1px 2px black;margin-top:0" class="card-panel blue darken-5 white-text">Are you there?</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col s6">
+                <video id="localVideo" autoplay></video>
+            </div>
+            <div class="col s6">
+                <video id="remoteVideo" autoplay></video>
+            </div>
+           
+            <div class="col s12">
+            	  <div>
+    <button id="startButton" class="btn blue">Start</button>
+    <button id="callButton" class="btn green"> Call</button>
+    <button id="hangupButton" class="btn red">Hang Up</button>
+  </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="js/lib/adapter.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
